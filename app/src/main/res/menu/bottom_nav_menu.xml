@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_activity"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="@string/title_activity" />
+    <item
+        android:id="@+id/navigation_service"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/title_service" />
+    <item
+        android:id="@+id/navigation_broadcast"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="@string/title_broadcast" />
+    <item
+        android:id="@+id/navigation_provider"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/title_provider" />
+</menu>

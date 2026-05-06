@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_activity">
+
+    <fragment
+        android:id="@+id/navigation_activity"
+        android:name="com.example.demo.ActivityFragment"
+        android:label="@string/title_activity" />
+
+    <fragment
+        android:id="@+id/navigation_service"
+        android:name="com.example.demo.ServiceFragment"
+        android:label="@string/title_service" />
+
+    <fragment
+        android:id="@+id/navigation_broadcast"
+        android:name="com.example.demo.BroadcastFragment"
+        android:label="@string/title_broadcast" />
+
+    <fragment
+        android:id="@+id/navigation_provider"
+        android:name="com.example.demo.ProviderFragment"
+        android:label="@string/title_provider" />
+
+</navigation>

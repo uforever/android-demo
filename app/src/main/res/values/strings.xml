@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Android组件教学</string>
+    <string name="title_activity">Activity组件</string>
+    <string name="title_service">Service组件</string>
+    <string name="title_broadcast">Broadcast组件</string>
+    <string name="title_provider">Provider组件</string>
+
+    <string name="activity_intro">Activity是Android四大组件之一，是用户与应用程序交互的界面。它负责管理UI和用户交互。\n\n当前页面演示内容：\n1. 显式Intent：跳转到另一个Activity\n2. 隐式Intent：调用系统功能（如拨打电话）</string>
+    <string name="dial_phone_hint">输入电话号码</string>
+    <string name="btn_dial">拨打电话</string>
+    <string name="btn_start_second">启动SecondActivity</string>
+
+    <string name="service_intro">Service是Android四大组件之一，用于在后台执行长时间运行的操作。\n\n【后台服务】\n点击启动一个每5秒打印一次Log的服务。\n⚠️ 注意：后台服务在App退出后极易被系统回收。\n\n【前台服务】\n点击启动一个带有常驻通知的服务。\n✓ 前台服务优先级高，用户可见，适合持续性任务。</string>
+    <string name="btn_start_background">启动后台服务</string>
+    <string name="btn_stop_background">停止后台服务</string>
+    <string name="btn_start_foreground">启动前台服务</string>
+    <string name="btn_stop_foreground">停止前台服务</string>
+
+    <string name="broadcast_intro">Broadcast Receiver是Android四大组件之一，用于接收来自系统或其他应用的消息。\n\n【系统广播】\n监听电源连接和Wi-Fi状态变化。\n\n【自定义广播】\n监听自定义广播 com.example.MY_NOTIFICATION\n\n下方提供ADB命令方便开发者测试：</string>
+    <string name="adb_power">模拟电源连接：\nadb shell dumpsys battery set ac 1</string>
+    <string name="adb_custom">发送自定义广播：\nadb shell am broadcast -a com.example.MY_NOTIFICATION</string>
+    <string name="broadcast_status">广播状态：等待中…</string>
+
+    <string name="provider_intro">Content Provider是Android四大组件之一，用于在不同的应用程序之间共享数据。\n\n【功能说明】\n本Demo使用SQLite数据库存储图书信息（书名、作者），通过Content Provider提供数据访问接口。\n\n【操作说明】\n1. 点击\"添加随机书籍\"向数据库插入一条图书记录\n2. 点击\"查询所有书籍\"通过ContentResolver查询并显示所有图书</string>
+    <string name="btn_add_book">添加随机书籍</string>
+    <string name="btn_query_books">查询所有书籍</string>
+    <string name="no_books">暂无书籍记录</string>
+
+    <string name="channel_name">前台服务通知</string>
+    <string name="channel_description">用于显示前台服务的常驻通知</string>
+    <string name="foreground_notification_title">前台服务运行中</string>
+    <string name="foreground_notification_text">正在执行后台任务…</string>
+</resources>

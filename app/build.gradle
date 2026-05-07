@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.demo'
+    namespace = 'com.example.demo'
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.demo"
-        minSdk 24
+        minSdk 26
         targetSdk 36
         versionCode 1
         versionName "1.0"
@@ -33,11 +33,11 @@ android {
     externalNativeBuild {
         cmake {
             path file('src/main/cpp/CMakeLists.txt')
-            version '3.22.1'
+            version = '3.22.1'
         }
     }
     buildFeatures {
-        viewBinding true
+        viewBinding = true
     }
 }
 

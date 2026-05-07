@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="这是 SecondActivity"
+        android:text="@string/second_activity_title"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="通过显式Intent从ActivityFragment启动"
+        android:text="@string/second_activity_desc"
         android:textSize="16sp" />
 
     <Button
@@ -25,6 +25,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="关闭此页面" />
+        android:text="@string/btn_finish" />
 
 </LinearLayout>

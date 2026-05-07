@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="【显式Intent演示】"
+            android:text="@string/explicit_intent_demo"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="【隐式Intent演示：调用系统拨号】"
+            android:text="@string/implicit_intent_demo"
             android:textSize="16sp"
             android:textStyle="bold" />
 

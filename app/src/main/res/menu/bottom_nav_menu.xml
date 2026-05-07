@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/navigation_activity"
+        android:id="@+id/navigation_component"
         android:icon="@android:drawable/ic_menu_compass"
-        android:title="@string/title_activity" />
+        android:title="@string/nav_component" />
     <item
-        android:id="@+id/navigation_service"
-        android:icon="@android:drawable/ic_menu_manage"
-        android:title="@string/title_service" />
+        android:id="@+id/navigation_network"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="@string/nav_network" />
     <item
-        android:id="@+id/navigation_broadcast"
-        android:icon="@android:drawable/ic_menu_share"
-        android:title="@string/title_broadcast" />
-    <item
-        android:id="@+id/navigation_provider"
-        android:icon="@android:drawable/ic_menu_save"
-        android:title="@string/title_provider" />
+        android:id="@+id/navigation_data_structure"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="@string/nav_data_structure" />
 </menu>

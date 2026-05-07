@@ -127,17 +127,15 @@ public class ForegroundService extends Service {
      * 必须在显示通知前创建渠道
      */
     private void createNotificationChannel() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel(
-                    CHANNEL_ID,
-                    getString(R.string.channel_name),
-                    NotificationManager.IMPORTANCE_LOW);
-            channel.setDescription(getString(R.string.channel_description));
-            
-            NotificationManager manager = getSystemService(NotificationManager.class);
-            if (manager != null) {
-                manager.createNotificationChannel(channel);
-            }
+        NotificationChannel channel = new NotificationChannel(
+                CHANNEL_ID,
+                getString(R.string.channel_name),
+                NotificationManager.IMPORTANCE_LOW);
+        channel.setDescription(getString(R.string.channel_description));
+        
+        NotificationManager manager = getSystemService(NotificationManager.class);
+        if (manager != null) {
+            manager.createNotificationChannel(channel);
         }
     }
 

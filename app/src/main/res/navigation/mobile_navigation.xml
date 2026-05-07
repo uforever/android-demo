@@ -2,26 +2,21 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/navigation_activity">
+    app:startDestination="@id/navigation_component">
 
     <fragment
-        android:id="@+id/navigation_activity"
-        android:name="com.example.demo.ActivityFragment"
-        android:label="@string/title_activity" />
+        android:id="@+id/navigation_component"
+        android:name="com.example.demo.component.ComponentModuleFragment"
+        android:label="组件模块" />
 
     <fragment
-        android:id="@+id/navigation_service"
-        android:name="com.example.demo.ServiceFragment"
-        android:label="@string/title_service" />
+        android:id="@+id/navigation_network"
+        android:name="com.example.demo.network.NetworkFragment"
+        android:label="网络通信" />
 
     <fragment
-        android:id="@+id/navigation_broadcast"
-        android:name="com.example.demo.BroadcastFragment"
-        android:label="@string/title_broadcast" />
-
-    <fragment
-        android:id="@+id/navigation_provider"
-        android:name="com.example.demo.ProviderFragment"
-        android:label="@string/title_provider" />
+        android:id="@+id/navigation_data_structure"
+        android:name="com.example.demo.datastructure.DataStructureFragment"
+        android:label="数据结构" />
 
 </navigation>

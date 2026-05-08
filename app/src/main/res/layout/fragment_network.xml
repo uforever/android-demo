@@ -1,29 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".NetworkFragment">
+    tools:context=".network.NetworkFragment">
 
-    <TextView
-        android:id="@+id/tv_network_title"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_network"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/purple_700"
-        android:layout_marginBottom="16dp"/>
+        android:background="@color/primary"
+        app:tabTextColor="@color/secondary_light"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorColor="@color/secondary"
+        app:tabIndicatorHeight="3dp">
 
-    <TextView
-        android:id="@+id/tv_network_intro"
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_http"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_websocket"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_grpc"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/network_intro"
-        android:textSize="16sp"
-        android:lineSpacingMultiplier="1.5"
-        android:textColor="@color/black" />
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
 </LinearLayout>

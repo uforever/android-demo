@@ -11,17 +11,18 @@
         android:text="@string/component_module_title"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/primary"
         android:padding="16dp" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        app:tabTextColor="@color/white"
-        app:tabSelectedTextColor="@color/teal_200"
-        app:tabIndicatorColor="@color/teal_200"
+        android:background="@color/primary"
+        app:tabTextColor="@color/secondary_light"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorColor="@color/secondary"
+        app:tabIndicatorHeight="3dp"
         app:tabTextAppearance="@style/TabTextAppearance" />
 
     <androidx.viewpager2.widget.ViewPager2

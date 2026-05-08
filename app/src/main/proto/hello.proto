@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package hello;
+
+option java_multiple_files = true;
+option java_package = "com.example.demo.network.grpc";
+option java_outer_classname = "HelloProto";
+
+message HelloRequest {
+  string greeting = 1;
+}
+
+message HelloResponse {
+  string reply = 1;
+}
+
+service HelloService {
+  rpc SayHello(HelloRequest) returns (HelloResponse);
+  rpc LotsOfReplies(HelloRequest) returns (stream HelloResponse);
+  rpc LotsOfGreetings(stream HelloRequest) returns (HelloResponse);
+  rpc BidiHello(stream HelloRequest) returns (stream HelloResponse);
+}

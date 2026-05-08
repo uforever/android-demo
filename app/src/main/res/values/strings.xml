@@ -33,6 +33,25 @@
     <string name="book_list">【图书列表】</string>
 
     <string name="network_intro">【网络通信模块】\n\n本模块用于演示Android网络通信相关功能。\n\n计划实现：\n- HTTP请求（OkHttp）\n- Retrofit网络框架\n- 网络状态监听\n- 文件上传下载</string>
+    <string name="http_demo">HTTP(s) 演示</string>
+    <string name="websocket_demo">WebSocket 演示</string>
+    <string name="grpc_demo">gRPC 演示</string>
+    <string name="grpc_server">Server: grpcb.in:9001</string>
+    <string name="okhttp_label">OkHttp</string>
+    <string name="retrofit_label">Retrofit</string>
+    <string name="btn_get_request">GET 请求</string>
+    <string name="btn_post_request">POST 请求</string>
+    <string name="btn_connect">连接</string>
+    <string name="btn_send">发送</string>
+    <string name="btn_send_request">发送请求</string>
+    <string name="btn_disconnect">断开</string>
+    <string name="btn_clear_log">清空日志</string>
+    <string name="okhttp_websocket">OkHttp WebSocket</string>
+    <string name="java_websocket">Java-WebSocket</string>
+    <string name="tab_http">HTTP(s)</string>
+    <string name="tab_websocket">WebSocket</string>
+    <string name="tab_grpc">gRPC</string>
+    <string name="grpc_server_label">Server</string>
     <string name="data_structure_intro">【数据结构模块】\n\n本模块用于演示常用数据结构的实现和应用。\n\n计划实现：\n- 链表（LinkedList）\n- 栈（Stack）\n- 队列（Queue）\n- 哈希表（HashMap）</string>
 
     <string name="channel_name">前台服务通知</string>

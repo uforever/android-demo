@@ -61,7 +61,9 @@ public class ComponentModuleFragment extends Fragment {
         viewPager.setAdapter(adapter);
         
         // 将TabLayout与ViewPager2关联
-        new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> tab.setText(adapter.getTitle(position))).attach();
+        new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
+            tab.setText(adapter.getTitle(position));
+        }).attach();
     }
 
     /**

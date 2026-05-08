@@ -69,8 +69,10 @@ public class ProviderFragment extends Fragment {
 
     private void queryAllBooks() {
         List<String> bookList = new ArrayList<>();
-        try (Cursor cursor = requireContext().getContentResolver().query(CONTENT_URI, null, null, null, null)) {
-
+        Cursor cursor = null;
+        try {
+            cursor = requireContext().getContentResolver().query(CONTENT_URI, null, null, null, null);
+            
             if (cursor != null) {
                 while (cursor.moveToNext()) {
                     String name = cursor.getString(cursor.getColumnIndexOrThrow("name"));
@@ -80,6 +82,10 @@ public class ProviderFragment extends Fragment {
             }
         } catch (Exception e) {
             Log.e(TAG, "查询书籍失败: " + e.getMessage());
+        } finally {
+            if (cursor != null) {
+                cursor.close();
+            }
         }
         
         displayBooks(bookList);

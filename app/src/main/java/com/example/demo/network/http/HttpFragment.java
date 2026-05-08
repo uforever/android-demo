@@ -22,6 +22,7 @@ public class HttpFragment extends Fragment {
     private FragmentHttpBinding binding;
     private OkHttpManager okHttpManager;
     private RetrofitManager retrofitManager;
+    private NativeHttpManager nativeHttpManager;
 
     @Nullable
     @Override
@@ -38,6 +39,19 @@ public class HttpFragment extends Fragment {
         
         okHttpManager = OkHttpManager.getInstance();
         retrofitManager = RetrofitManager.getInstance();
+        nativeHttpManager = NativeHttpManager.getInstance();
+
+        nativeHttpManager.setListener(new NativeHttpManager.OnHttpResponseListener() {
+            @Override
+            public void onSuccess(String response, int statusCode, String headers) {
+                appendLog(response);
+            }
+
+            @Override
+            public void onFailure(String error) {
+                appendLog("Native 错误: " + error);
+            }
+        });
 
         okHttpManager.setListener(new OkHttpManager.OnHttpResponseListener() {
             @Override
@@ -99,6 +113,25 @@ public class HttpFragment extends Fragment {
 
         binding.btnClearLog.setOnClickListener(v -> {
             binding.tvLog.setText("");
+        });
+
+        binding.btnNativeGet.setOnClickListener(v -> {
+            appendLog("=== Native GET 请求 ===");
+            nativeHttpManager.performGetRequest("https://echo.hoppscotch.io?foo=bar");
+        });
+
+        binding.btnNativePost.setOnClickListener(v -> {
+            appendLog("=== Native POST 请求 ===");
+            new Thread(() -> {
+                try {
+                    JSONObject json = new JSONObject();
+                    json.put("name", "NativeTest");
+                    json.put("value", "Hello from libcurl Native");
+                    nativeHttpManager.performPostRequest("https://echo.hoppscotch.io", json.toString());
+                } catch (Exception e) {
+                    appendLog("JSON 构建失败: " + e.getMessage());
+                }
+            }).start();
         });
     }
 

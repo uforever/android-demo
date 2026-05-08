@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Android应用示例</string>
-    <string name="title_network">网络通信</string>
     <string name="title_data_structure">数据结构</string>
 
     <string name="activity_intro">Activity是Android四大组件之一，是用户与应用程序交互的界面。它负责管理UI和用户交互。\n\n当前页面演示内容：\n1. 显式Intent：跳转到另一个Activity\n2. 隐式Intent：调用系统功能（如拨打电话）</string>
@@ -32,13 +31,13 @@
     <string name="no_books">暂无书籍记录</string>
     <string name="book_list">【图书列表】</string>
 
-    <string name="network_intro">【网络通信模块】\n\n本模块用于演示Android网络通信相关功能。\n\n计划实现：\n- HTTP请求（OkHttp）\n- Retrofit网络框架\n- 网络状态监听\n- 文件上传下载</string>
     <string name="http_demo">HTTP(s) 演示</string>
     <string name="websocket_demo">WebSocket 演示</string>
     <string name="grpc_demo">gRPC 演示</string>
     <string name="grpc_server">Server: grpcb.in:9001</string>
     <string name="okhttp_label">OkHttp</string>
     <string name="retrofit_label">Retrofit</string>
+    <string name="libcurl_label">libcurl</string>
     <string name="btn_get_request">GET 请求</string>
     <string name="btn_post_request">POST 请求</string>
     <string name="btn_connect">连接</string>
@@ -48,9 +47,6 @@
     <string name="btn_clear_log">清空日志</string>
     <string name="okhttp_websocket">OkHttp WebSocket</string>
     <string name="java_websocket">Java-WebSocket</string>
-    <string name="tab_http">HTTP(s)</string>
-    <string name="tab_websocket">WebSocket</string>
-    <string name="tab_grpc">gRPC</string>
     <string name="grpc_server_label">Server</string>
     <string name="data_structure_intro">【数据结构模块】\n\n本模块用于演示常用数据结构的实现和应用。\n\n计划实现：\n- 链表（LinkedList）\n- 栈（Stack）\n- 队列（Queue）\n- 哈希表（HashMap）</string>
 

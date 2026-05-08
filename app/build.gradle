@@ -45,6 +45,10 @@ android {
             proto {
                 srcDir 'src/main/proto'
             }
+            java {
+                srcDirs += 'build/generated/java/generateDebugProto/java'
+                srcDirs += 'build/generated/java/generateDebugProto/grpc'
+            }
         }
     }
 }

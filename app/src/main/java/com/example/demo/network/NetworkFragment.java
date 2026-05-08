@@ -8,19 +8,20 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.demo.databinding.FragmentNetworkBinding;
 import com.example.demo.network.grpc.GrpcFragment;
 import com.example.demo.network.http.HttpFragment;
 import com.example.demo.network.websocket.WebSocketFragment;
 import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 public class NetworkFragment extends Fragment {
 
     private FragmentNetworkBinding binding;
+
+    private static final String[] TITLES = {"HTTP(s)", "WebSocket", "gRPC"};
 
     @Nullable
     @Override
@@ -35,8 +36,15 @@ public class NetworkFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.viewPager.setAdapter(new NetworkPagerAdapter(getChildFragmentManager()));
-        binding.tabLayout.setupWithViewPager(binding.viewPager);
+        binding.viewPager.setAdapter(new NetworkPagerAdapter(this));
+
+        new TabLayoutMediator(binding.tabLayout, binding.viewPager,
+                new TabLayoutMediator.TabConfigurationStrategy() {
+                    @Override
+                    public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+                        tab.setText(TITLES[position]);
+                    }
+                }).attach();
     }
 
     @Override
@@ -45,20 +53,16 @@ public class NetworkFragment extends Fragment {
         binding = null;
     }
 
-    private static class NetworkPagerAdapter extends FragmentPagerAdapter {
+    private static class NetworkPagerAdapter extends FragmentStateAdapter {
 
-        private static final String[] TITLES = {"HTTP(s)", "WebSocket", "gRPC"};
-
-        public NetworkPagerAdapter(@NonNull FragmentManager fm) {
-            super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        public NetworkPagerAdapter(@NonNull Fragment fragment) {
+            super(fragment);
         }
 
         @NonNull
         @Override
-        public Fragment getItem(int position) {
+        public Fragment createFragment(int position) {
             switch (position) {
-                case 0:
-                    return new HttpFragment();
                 case 1:
                     return new WebSocketFragment();
                 case 2:
@@ -69,14 +73,8 @@ public class NetworkFragment extends Fragment {
         }
 
         @Override
-        public int getCount() {
+        public int getItemCount() {
             return TITLES.length;
-        }
-
-        @Nullable
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return TITLES[position];
         }
     }
 }

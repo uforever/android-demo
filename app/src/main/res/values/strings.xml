@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Android应用示例</string>
-    <string name="title_data_structure">数据结构</string>
 
     <string name="activity_intro">Activity是Android四大组件之一，是用户与应用程序交互的界面。它负责管理UI和用户交互。\n\n当前页面演示内容：\n1. 显式Intent：跳转到另一个Activity\n2. 隐式Intent：调用系统功能（如拨打电话）</string>
     <string name="dial_phone_hint">输入电话号码</string>
@@ -48,7 +47,6 @@
     <string name="okhttp_websocket">OkHttp WebSocket</string>
     <string name="java_websocket">Java-WebSocket</string>
     <string name="grpc_server_label">Server</string>
-    <string name="data_structure_intro">【数据结构模块】\n\n本模块用于演示常用数据结构的实现和应用。\n\n计划实现：\n- 链表（LinkedList）\n- 栈（Stack）\n- 队列（Queue）\n- 哈希表（HashMap）</string>
 
     <string name="channel_name">前台服务通知</string>
     <string name="channel_description">用于显示前台服务的常驻通知</string>
@@ -64,4 +62,60 @@
     <string name="nav_data_structure">数据结构</string>
 
     <string name="component_module_title">Android四大组件</string>
+
+    <string name="linked_list_demo">链表 演示</string>
+    <string name="lru_cache_label">LRU 缓存淘汰</string>
+    <string name="hint_cache_capacity">缓存容量</string>
+    <string name="btn_init_cache">初始化缓存</string>
+    <string name="cache_operation_label">缓存操作</string>
+    <string name="hint_key">Key</string>
+    <string name="hint_value">Value</string>
+    <string name="btn_put">PUT</string>
+    <string name="btn_get">GET</string>
+
+    <string name="stack_demo">栈 演示</string>
+    <string name="bracket_match_label">括号匹配</string>
+    <string name="hint_bracket_input">输入含括号的字符串</string>
+    <string name="btn_bracket_match">括号匹配</string>
+    <string name="expression_eval_label">表达式求值</string>
+    <string name="hint_expression">输入中缀表达式</string>
+    <string name="btn_evaluate">求值</string>
+
+    <string name="heap_demo">堆 演示</string>
+    <string name="top_k_label">Top K 问题</string>
+    <string name="hint_numbers">数字序列（逗号分隔）</string>
+    <string name="hint_k_value">K 值</string>
+    <string name="btn_find_top_k">查找 Top K</string>
+
+    <string name="hash_map_demo">哈希表 演示</string>
+    <string name="two_sum_label">两数之和 (Two Sum)</string>
+    <string name="hint_array_input">数组（逗号分隔）</string>
+    <string name="hint_target">目标值</string>
+    <string name="btn_hash_solve">哈希表求解</string>
+    <string name="btn_brute_solve">暴力求解</string>
+
+    <string name="trie_demo">字典树 演示</string>
+    <string name="auto_complete_label">搜索自动补全</string>
+    <string name="hint_word_input">输入单词或前缀</string>
+    <string name="btn_insert_word">插入单词</string>
+    <string name="btn_search_prefix">搜索前缀</string>
+
+    <string name="graph_demo">图 演示</string>
+    <string name="graph_traversal_label">图遍历</string>
+    <string name="hint_start_node">起始节点</string>
+    <string name="btn_bfs">BFS</string>
+    <string name="btn_dfs">DFS</string>
+    <string name="shortest_path_label">最短路径</string>
+    <string name="hint_end_node">终点节点</string>
+    <string name="btn_shortest_path">查找最短路径</string>
+
+    <string name="default_node_a">A</string>
+    <string name="default_node_g">G</string>
+    <string name="default_two_sum_array">2,7,11,15</string>
+    <string name="default_target_9">9</string>
+    <string name="default_topk_numbers">3,1,4,1,5,9,2,6,5,3</string>
+    <string name="default_k_3">3</string>
+    <string name="default_capacity_3">3</string>
+    <string name="default_bracket_input">{[()]}</string>
+    <string name="default_expression">3+5*2-1</string>
 </resources>

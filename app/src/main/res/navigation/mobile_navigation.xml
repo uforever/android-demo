@@ -19,4 +19,9 @@
         android:name="com.example.demo.datastructure.DataStructureFragment"
         android:label="数据结构" />
 
+    <fragment
+        android:id="@+id/navigation_crypto"
+        android:name="com.example.demo.crypto.CryptoFragment"
+        android:label="密码学" />
+
 </navigation>

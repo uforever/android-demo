@@ -12,4 +12,8 @@
         android:id="@+id/navigation_data_structure"
         android:icon="@android:drawable/ic_menu_sort_by_size"
         android:title="@string/nav_data_structure" />
+    <item
+        android:id="@+id/navigation_crypto"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/nav_crypto" />
 </menu>

@@ -15,13 +15,13 @@ android {
         applicationId "com.example.demo"
         minSdk 26
         targetSdk 36
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.4.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         
         ndk {
-            abiFilters "armeabi-v7a", "arm64-v8a", "x86_64"
+            abiFilters "arm64-v8a"
         }
     }
 
@@ -103,6 +103,10 @@ dependencies {
     compileOnly libs.javax.annotation
     
     implementation libs.java.websocket
+
+    implementation libs.bouncy.castle
+    implementation libs.conscrypt
+    implementation libs.tink
     
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit

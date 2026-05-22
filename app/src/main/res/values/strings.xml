@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Android应用示例</string>
 
     <string name="activity_intro">Activity是Android四大组件之一，是用户与应用程序交互的界面。它负责管理UI和用户交互。\n\n当前页面演示内容：\n1. 显式Intent：跳转到另一个Activity\n2. 隐式Intent：调用系统功能（如拨打电话）</string>
@@ -117,5 +117,54 @@
     <string name="default_k_3">3</string>
     <string name="default_capacity_3">3</string>
     <string name="default_bracket_input">{[()]}</string>
-    <string name="default_expression">3+5*2-1</string>
+    <string name="default_expression" tools:ignore="TypographyDashes">3+5*2-1</string>
+
+    <!-- 密码学模块 -->
+    <string name="nav_crypto">密码学</string>
+    <string name="encoding_demo">编码 演示</string>
+    <string name="base64_label">Base64</string>
+    <string name="hex_label">Hex</string>
+    <string name="url_label">URL</string>
+    <string name="btn_encode">编码</string>
+    <string name="btn_decode">解码</string>
+    <string name="hint_input_text">输入文本</string>
+
+    <string name="symmetric_demo">对称加密 演示</string>
+    <string name="algorithm_label">算法</string>
+    <string name="hint_plaintext">输入明文</string>
+    <string name="hint_key_hex">密钥（Hex）</string>
+    <string name="btn_generate_key">生成密钥</string>
+    <string name="btn_encrypt">加密</string>
+
+    <string name="asymmetric_demo">非对称加密 演示</string>
+    <string name="btn_generate_keypair">生成密钥对</string>
+
+    <string name="hash_demo">哈希/HMAC 演示</string>
+    <string name="btn_compute">计算</string>
+
+    <string name="signature_demo">数字签名 演示</string>
+    <string name="btn_sign">签名</string>
+    <string name="btn_verify">验签</string>
+
+    <string name="kdf_demo">密钥派生 演示</string>
+    <string name="btn_derive">派生</string>
+    <string name="hint_password">输入密码</string>
+    <string name="hint_salt">盐值</string>
+    <string name="hint_iterations">迭代次数</string>
+    <string name="hint_output_length">输出长度（字节）</string>
+
+    <string name="pqc_demo">后量子密码 演示</string>
+    <string name="btn_encapsulate">封装</string>
+
+    <!-- Crypto demo default inputs -->
+    <string name="default_asymmetric_input">Hello RSA/SM2</string>
+    <string name="default_encoding_input">Hello 密码学!</string>
+    <string name="default_hash_input">Hello Crypto</string>
+    <string name="default_kdf_password">MySecretPassword</string>
+    <string name="default_kdf_salt">NaCl</string>
+    <string name="default_kdf_iterations">10000</string>
+    <string name="default_kdf_output_length">32</string>
+    <string name="default_pqc_input">Hello PQC</string>
+    <string name="default_signature_input">Hello Signature</string>
+    <string name="default_symmetric_input">Hello Crypto</string>
 </resources>

@@ -2,9 +2,18 @@ cmake_minimum_required(VERSION 3.22.1)
 
 project("demo")
 
+# Add native crypto libraries
+add_subdirectory(libtomcrypt)
+add_subdirectory(libsodium)
+add_subdirectory(gmssl)
+
 add_library(${CMAKE_PROJECT_NAME} SHARED
     native-lib.cpp
     native-http.cpp
+    native-crypto.cpp
+    native-crypto-tomcrypt.cpp
+    native-crypto-sodium.cpp
+    native-crypto-gmssl.cpp
 )
 
 if (ANDROID_ABI STREQUAL "armeabi-v7a")
@@ -27,4 +36,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
     ${LIBCURL_DIR}/lib/libssl.a
     ${LIBCURL_DIR}/lib/libcrypto.a
     ${LIBCURL_DIR}/lib/libz.a
+    tomcrypt
+    sodium
+    gmssl
 )

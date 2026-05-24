@@ -16,6 +16,18 @@ add_library(${CMAKE_PROJECT_NAME} SHARED
     native-crypto-gmssl.cpp
 )
 
+# OLLVM 混淆编译选项（仅对 native-*.cpp 源文件生效）
+set(OLLVM "-mllvm -irobf-indbr -mllvm -irobf-icall -mllvm -irobf-indgv -mllvm -irobf-cse -mllvm -irobf-fla -mllvm -irobf-cie -mllvm -irobf-cfe")
+set_source_files_properties(
+    native-lib.cpp
+    native-http.cpp
+    native-crypto.cpp
+    native-crypto-tomcrypt.cpp
+    native-crypto-sodium.cpp
+    native-crypto-gmssl.cpp
+    PROPERTIES COMPILE_FLAGS "${OLLVM}"
+)
+
 if (ANDROID_ABI STREQUAL "armeabi-v7a")
     set(LIBCURL_DIR "${CMAKE_SOURCE_DIR}/libcurl/armeabi-v7a")
 elseif (ANDROID_ABI STREQUAL "arm64-v8a")

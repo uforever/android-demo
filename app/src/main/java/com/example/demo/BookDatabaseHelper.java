@@ -4,6 +4,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 /**
  * BookDatabaseHelper 是一个 SQLite 数据库帮助类
  * 
@@ -13,6 +15,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  * 
  * 本类管理图书信息数据库，包含一张 books 表
  */
+@Obfuscate
 public class BookDatabaseHelper extends SQLiteOpenHelper {
 
     /** 数据库名称 */

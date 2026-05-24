@@ -10,8 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.databinding.FragmentGrpcBinding;
 
+@Obfuscate
 public class GrpcFragment extends Fragment {
 
     private FragmentGrpcBinding binding;

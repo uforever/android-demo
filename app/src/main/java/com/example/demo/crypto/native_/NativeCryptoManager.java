@@ -1,5 +1,8 @@
 package com.example.demo.crypto.native_;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
+@Obfuscate
 public class NativeCryptoManager {
 
     static {

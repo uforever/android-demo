@@ -2,6 +2,8 @@ package com.example.demo.crypto.hash;
 
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.Security;
@@ -9,6 +11,7 @@ import java.security.Security;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
+@Obfuscate
 public class HashManager {
 
     static {

@@ -1,9 +1,12 @@
 package com.example.demo.datastructure.stack;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
+@Obfuscate
 public class StackAlgorithm {
 
     public static String bracketMatch(String input) {

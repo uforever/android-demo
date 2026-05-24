@@ -1,8 +1,11 @@
 package com.example.demo.datastructure.hashmap;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import java.util.HashMap;
 import java.util.Map;
 
+@Obfuscate
 public class TwoSumSolver {
 
     public static String solveByHashMap(int[] nums, int target) {

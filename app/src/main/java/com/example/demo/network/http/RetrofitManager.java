@@ -5,6 +5,8 @@ import android.os.Looper;
 
 import androidx.annotation.NonNull;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -21,6 +23,7 @@ import retrofit2.http.Query;
 
 import java.util.Map;
 
+@Obfuscate
 public class RetrofitManager {
 
     private static RetrofitManager instance;

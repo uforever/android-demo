@@ -12,6 +12,8 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.R;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
@@ -22,6 +24,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
  * 作为四大组件的容器，使用ViewPager2 + TabLayout实现组件间切换
  * 包含：Activity、Service、Broadcast、Provider四个子模块
  */
+@Obfuscate
 public class ComponentModuleFragment extends Fragment {
 
     /** ViewPager2用于页面切换 */

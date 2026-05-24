@@ -8,6 +8,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 /**
  * BookProvider 是一个 ContentProvider 实现类
  * 
@@ -26,6 +28,7 @@ import android.net.Uri;
  * 【生命周期】
  * - onCreate(): Provider 创建时调用，初始化数据库
  */
+@Obfuscate
 public class BookProvider extends ContentProvider {
 
     /** ContentProvider 的 authority（唯一标识） */

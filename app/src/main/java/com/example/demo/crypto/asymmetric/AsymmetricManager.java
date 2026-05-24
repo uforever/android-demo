@@ -6,8 +6,11 @@ import com.example.demo.crypto.native_.NativeCryptoManager;
 import java.security.KeyPair;
 import java.security.SecureRandom;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import javax.crypto.Cipher;
 
+@Obfuscate
 public class AsymmetricManager {
 
     // ===== RSA =====

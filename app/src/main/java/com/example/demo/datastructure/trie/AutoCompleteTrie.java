@@ -1,9 +1,12 @@
 package com.example.demo.datastructure.trie;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
+@Obfuscate
 public class AutoCompleteTrie {
 
     private static class TrieNode {

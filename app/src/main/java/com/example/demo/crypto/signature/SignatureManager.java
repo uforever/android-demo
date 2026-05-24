@@ -2,6 +2,8 @@ package com.example.demo.crypto.signature;
 
 import com.example.demo.crypto.hash.HashManager;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import java.security.KeyPair;
@@ -11,6 +13,7 @@ import java.security.PublicKey;
 import java.security.Security;
 import java.security.Signature;
 
+@Obfuscate
 public class SignatureManager {
 
     static {

@@ -10,10 +10,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.databinding.FragmentGraphBinding;
 
 import java.util.Locale;
 
+@Obfuscate
 public class GraphFragment extends Fragment {
 
     private FragmentGraphBinding binding;

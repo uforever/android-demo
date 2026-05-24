@@ -17,10 +17,13 @@ import androidx.fragment.app.Fragment;
 
 import com.example.demo.databinding.FragmentProviderBinding;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+@Obfuscate
 public class ProviderFragment extends Fragment {
 
     private static final String TAG = "ProviderFragment";

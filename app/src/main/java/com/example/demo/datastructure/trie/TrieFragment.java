@@ -10,8 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.databinding.FragmentTrieBinding;
 
+@Obfuscate
 public class TrieFragment extends Fragment {
 
     private FragmentTrieBinding binding;

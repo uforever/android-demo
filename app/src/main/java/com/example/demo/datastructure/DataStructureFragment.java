@@ -10,6 +10,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.datastructure.graph.GraphFragment;
 import com.example.demo.datastructure.hashmap.HashMapFragment;
 import com.example.demo.datastructure.heap.HeapFragment;
@@ -19,6 +21,7 @@ import com.example.demo.datastructure.trie.TrieFragment;
 import com.example.demo.databinding.FragmentDataStructureBinding;
 import com.google.android.material.tabs.TabLayoutMediator;
 
+@Obfuscate
 public class DataStructureFragment extends Fragment {
 
     private FragmentDataStructureBinding binding;

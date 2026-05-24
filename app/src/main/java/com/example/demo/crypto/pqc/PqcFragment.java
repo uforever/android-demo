@@ -14,6 +14,8 @@ import androidx.fragment.app.Fragment;
 import com.example.demo.crypto.hash.HashManager;
 import com.example.demo.databinding.FragmentPqcBinding;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
 import org.bouncycastle.pqc.crypto.mlkem.MLKEMPrivateKeyParameters;
 import org.bouncycastle.pqc.crypto.mlkem.MLKEMPublicKeyParameters;
@@ -23,6 +25,7 @@ import org.bouncycastle.pqc.crypto.mldsa.MLDSAPublicKeyParameters;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
+@Obfuscate
 public class PqcFragment extends Fragment {
 
     private FragmentPqcBinding binding;

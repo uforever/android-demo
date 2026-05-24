@@ -3,12 +3,15 @@ package com.example.demo.network.websocket;
 import android.os.Handler;
 import android.os.Looper;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 
+@Obfuscate
 public class JavaWebSocket {
 
     private static final String WS_URL = "wss://echo.websocket.org";

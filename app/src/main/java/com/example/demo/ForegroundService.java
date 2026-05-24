@@ -15,6 +15,8 @@ import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 /**
  * ForegroundService 是一个前台服务示例
  * 
@@ -29,6 +31,7 @@ import androidx.core.app.NotificationCompat;
  * - 前台服务优先级更高，系统不会轻易杀死
  * - 前台服务消耗更多系统资源（因为通知需要持续显示）
  */
+@Obfuscate
 public class ForegroundService extends Service {
 
     /** 日志标签 */

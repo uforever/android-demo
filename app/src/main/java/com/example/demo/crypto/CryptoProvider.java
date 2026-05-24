@@ -3,6 +3,9 @@ package com.example.demo.crypto;
 import android.annotation.SuppressLint;
 import java.security.Security;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
+@Obfuscate
 @SuppressLint("StaticFieldLeak")
 public class CryptoProvider {
 

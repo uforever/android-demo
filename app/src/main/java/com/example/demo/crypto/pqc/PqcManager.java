@@ -1,5 +1,7 @@
 package com.example.demo.crypto.pqc;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import org.bouncycastle.crypto.SecretWithEncapsulation;
 import org.bouncycastle.crypto.Signer;
 import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
@@ -21,6 +23,7 @@ import org.bouncycastle.pqc.crypto.mldsa.MLDSASigner;
 import java.security.SecureRandom;
 import java.security.Security;
 
+@Obfuscate
 public class PqcManager {
 
     static {

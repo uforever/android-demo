@@ -3,12 +3,15 @@ package com.example.demo.network.grpc;
 import android.os.Handler;
 import android.os.Looper;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import java.util.concurrent.TimeUnit;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
 
+@Obfuscate
 public class GrpcManager {
 
     private static final String GRPC_HOST = "grpcb.in";

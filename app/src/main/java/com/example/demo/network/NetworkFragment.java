@@ -10,6 +10,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.databinding.FragmentNetworkBinding;
 import com.example.demo.network.grpc.GrpcFragment;
 import com.example.demo.network.http.HttpFragment;
@@ -17,6 +19,7 @@ import com.example.demo.network.websocket.WebSocketFragment;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
+@Obfuscate
 public class NetworkFragment extends Fragment {
 
     private FragmentNetworkBinding binding;

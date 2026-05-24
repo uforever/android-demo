@@ -12,11 +12,14 @@ import androidx.fragment.app.Fragment;
 
 import com.example.demo.databinding.FragmentHttpBinding;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Obfuscate
 public class HttpFragment extends Fragment {
 
     private FragmentHttpBinding binding;

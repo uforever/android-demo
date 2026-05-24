@@ -8,6 +8,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 /**
  * SecondActivity 用于演示显式 Intent 的使用
  *
@@ -19,6 +21,7 @@ import androidx.core.view.WindowInsetsCompat;
  * 此 Activity 在 ActivityFragment 中通过显式 Intent 启动
  * 展示了 Activity 之间的基本跳转流程
  */
+@Obfuscate
 public class SecondActivity extends AppCompatActivity {
 
     /**

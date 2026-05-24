@@ -10,6 +10,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.crypto.encoding.EncodingFragment;
 import com.example.demo.crypto.hash.HashFragment;
 import com.example.demo.crypto.kdf.KdfFragment;
@@ -21,6 +23,7 @@ import com.example.demo.databinding.FragmentCryptoBinding;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
+@Obfuscate
 public class CryptoFragment extends Fragment {
 
     private FragmentCryptoBinding binding;

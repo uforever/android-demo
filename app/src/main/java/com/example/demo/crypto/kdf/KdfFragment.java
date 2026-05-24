@@ -11,8 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.databinding.FragmentKdfBinding;
 
+@Obfuscate
 public class KdfFragment extends Fragment {
 
     private FragmentKdfBinding binding;

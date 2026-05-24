@@ -1,5 +1,7 @@
 package com.example.demo.datastructure.graph;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -10,6 +12,7 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
+@Obfuscate
 public class GraphAlgorithm {
 
     private final Map<String, List<String>> adjacencyList = new HashMap<>();

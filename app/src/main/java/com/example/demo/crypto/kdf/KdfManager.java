@@ -3,6 +3,8 @@ package com.example.demo.crypto.kdf;
 import com.example.demo.crypto.hash.HashManager;
 import com.example.demo.crypto.native_.NativeCryptoManager;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import org.bouncycastle.crypto.generators.HKDFBytesGenerator;
 import org.bouncycastle.crypto.params.HKDFParameters;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
@@ -13,6 +15,7 @@ import java.security.Security;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 
+@Obfuscate
 public class KdfManager {
 
     static {

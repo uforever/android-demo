@@ -19,6 +19,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.demo.databinding.ActivityMainBinding;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 /**
  * MainActivity 是应用程序的主入口 Activity，作为四大组件演示的容器
  *
@@ -35,6 +37,7 @@ import com.example.demo.databinding.ActivityMainBinding;
  * - onStop(): Activity 完全不可见
  * - onDestroy(): Activity 被销毁（如系统回收内存）
  */
+@Obfuscate
 public class MainActivity extends AppCompatActivity {
 
     /**

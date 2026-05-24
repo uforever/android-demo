@@ -16,8 +16,11 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.core.content.ContextCompat;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.databinding.FragmentBroadcastBinding;
 
+@Obfuscate
 public class BroadcastFragment extends Fragment {
 
     private static final String TAG = "BroadcastFragment";

@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.crypto.hash.HashManager;
 import com.example.demo.crypto.native_.NativeCryptoManager;
 import com.example.demo.databinding.FragmentSignatureBinding;
@@ -18,6 +20,7 @@ import com.example.demo.databinding.FragmentSignatureBinding;
 import java.nio.charset.StandardCharsets;
 import java.security.KeyPair;
 
+@Obfuscate
 public class SignatureFragment extends Fragment {
 
     private FragmentSignatureBinding binding;

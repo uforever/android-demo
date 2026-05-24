@@ -1,5 +1,8 @@
 package com.example.demo.network.http;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
+@Obfuscate
 public class NativeHttpManager {
 
     private static NativeHttpManager instance;

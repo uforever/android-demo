@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.crypto.hash.HashManager;
 import com.example.demo.crypto.native_.NativeCryptoManager;
 import com.example.demo.databinding.FragmentAsymmetricBinding;
@@ -19,6 +21,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.KeyPair;
 import java.util.Arrays;
 
+@Obfuscate
 public class AsymmetricFragment extends Fragment {
 
     private FragmentAsymmetricBinding binding;

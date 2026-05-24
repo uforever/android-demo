@@ -1,5 +1,7 @@
 package com.example.demo.datastructure.heap;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
@@ -7,6 +9,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.PriorityQueue;
 
+@Obfuscate
 public class TopKFinder {
 
     public static String findTopK(int[] nums, int k) {

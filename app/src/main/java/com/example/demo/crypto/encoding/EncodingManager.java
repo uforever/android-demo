@@ -2,10 +2,13 @@ package com.example.demo.crypto.encoding;
 
 import android.util.Base64;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
+@Obfuscate
 public class EncodingManager {
 
     public static String base64Encode(String input) {

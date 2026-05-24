@@ -7,6 +7,8 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.util.Log;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 /**
  * BackgroundService 是一个后台服务示例
  * 
@@ -22,6 +24,7 @@ import android.util.Log;
  * 
  * 本服务演示：每5秒打印一次日志
  */
+@Obfuscate
 public class BackgroundService extends Service {
 
     /** 日志标签 */

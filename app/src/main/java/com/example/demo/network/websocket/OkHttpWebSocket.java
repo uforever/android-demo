@@ -5,6 +5,8 @@ import android.os.Looper;
 
 import androidx.annotation.NonNull;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -12,6 +14,7 @@ import okhttp3.WebSocket;
 import okhttp3.WebSocketListener;
 import okio.ByteString;
 
+@Obfuscate
 public class OkHttpWebSocket {
 
     private static final String WS_URL = "wss://echo.websocket.org";

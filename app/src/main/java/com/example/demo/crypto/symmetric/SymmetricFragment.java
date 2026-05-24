@@ -11,12 +11,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.crypto.hash.HashManager;
 import com.example.demo.crypto.native_.NativeCryptoManager;
 import com.example.demo.databinding.FragmentSymmetricBinding;
 
 import java.nio.charset.StandardCharsets;
 
+@Obfuscate
 public class SymmetricFragment extends Fragment {
 
     private FragmentSymmetricBinding binding;

@@ -10,8 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.databinding.FragmentStackBinding;
 
+@Obfuscate
 public class StackFragment extends Fragment {
 
     private FragmentStackBinding binding;

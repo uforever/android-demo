@@ -6,6 +6,8 @@ import com.google.crypto.tink.KeysetHandle;
 import com.google.crypto.tink.aead.AeadKeyTemplates;
 import com.google.crypto.tink.Aead;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import java.nio.charset.StandardCharsets;
@@ -20,6 +22,7 @@ import javax.crypto.spec.GCMParameterSpec;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
+@Obfuscate
 public class SymmetricManager {
 
     static {

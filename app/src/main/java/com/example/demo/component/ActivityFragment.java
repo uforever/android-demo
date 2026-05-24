@@ -11,10 +11,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import org.lsposed.lsparanoid.Obfuscate;
+
 import com.example.demo.databinding.FragmentActivityBinding;
 
 import java.util.List;
 
+@Obfuscate
 public class ActivityFragment extends Fragment {
 
     private FragmentActivityBinding binding;
